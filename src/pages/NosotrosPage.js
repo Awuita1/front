@@ -18,7 +18,7 @@ const NosotrosPage = (props) =>{
                 <h2>Staff</h2>
                 <div className="personas">
                     <div className="persona">
-                        <img src="img/nosotros/nosotros1" alt="Juan Simon"/>
+                        <img src="img/nosotros/nosotros1.jpg" alt="Juan Simon"/>
                         <h5>Juan Simon</h5>
                         <h6>Gerente general</h6>
                         <p>

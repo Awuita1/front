@@ -4,7 +4,7 @@ const HomePage = (props) =>{
     return(
         <main className = "holder">
             <div className="homeimg">
-                <img src="iamges/home/img01.png" alt="avion" />
+                <img src="./img/home/img01.jpg" alt="avion" />
             </div>
 
             <div className="columnas">
