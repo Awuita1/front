@@ -4,74 +4,6 @@ body{
   line-height: 20px;
 }
 
-header{
-  background-color: rgba(174,126,208);
-  padding: 16px 0;
-}
-
-header img{
-  width: 100px; 
-  height: 100px; 
-  border-radius: 50%; /* Convierte el cuadrado en un círculo */
-  box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.87);
-  -webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.87);
-  -moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.87);
-
-}
-
-header h1{
-  color: white;
-  font-size: 40px;
-  font-weight: 100;
-  font-style: italic;
-  display: inline-block;
-  position: relative;
-  bottom: 35px;
-  margin-left: 10px;
-  text-shadow: -1px 2px 2px rgba(157,36,36,0.6);
-}
-
-nav{
-  background-color: #6da9ed;
-  margin-bottom: 20px;
-}
-
-nav ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li{
-  flex-grow: 1;
-}
-
-nav ul li a{
-  color: white;
-  text-decoration: none;
-  padding: 3px 6px;
-  display: block;
-  text-align: center;
-}
-
-nav ul li a:hover{
-  background-color: rgba(0,0,0,0.3);
-}
-
-nav ul li a.activo{
-  background-color: #4c76a5;
-}
-
-footer{
-  background-color: #ccc;
-  clear: both;
-  color: #333;
-  text-align: center;
-  padding: 5px 0;
-  margin-top: 20px;
-}
-
 .holder{
   max-width: 960px;
   margin: 0 auto;
@@ -82,86 +14,16 @@ h2{
   font-weight: 400;
 }
 
-.bienvenidos{
-  width: 75%;
-  padding-right: 10px;
-  box-sizing: border-box;
-}
 
-.testimonios{
-  width: 25%;
-}
 
-.columnas{
-  display: flex;
-  justify-content: space-between;
-}
+header img{
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; /* Convierte el cuadrado en un círculo */
+  box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.87);
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.87);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.87);
 
-.bienvenidos{
-  font-size: 20px;
-}
-
-.testimonio{
-  background-color: #ccc;
-  padding: 16px;
-}
-
-.testimonio .cita{
-  background-color: #ccc;
-  padding: 16px;
-}
-
-.testimonio .autor{
-  font-size: 10px;
-  text-align: center;
-  display: block;
-  margin: 12px 0;
-}
-
-.historia p{ 
-  font-size: 12px;
-}
-
-.personas{
-  display: flex;
-  justify-content: space-between;
-}
-
-.persona{
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 18%;
-  text-align: center;
-  padding: 13px;
-  box-sizing: border-box;
-}
-
-.persona img{
-  border-radius: 50%;
-  max-width: 60%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-
-.persona h5
-.persona h5{
-  margin: 50%;
-  font-weight: 60%;
-  color: #2e64a1;
-}
-
-.persona h5{
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.persona h6{
-  font-size: 11px;
-  font-style: italic;
-}
-
-.persona p{
-  color: #666;
-  font-size: 10px;
 }
 
 .servicio{
@@ -221,59 +83,9 @@ h2{
 
 /* Contact */
 
-.contacto{
-  display: flex;
-  gap: 24px;
-}
-
-.contacto div{
-  width: 100%;
-}
-
-.datos p{
-  font-size: 14px;
-}
-
-.datos ul li{
-  font-size: 13px;
-}
-
-.formulario p{
-  display: flex;
-}
-
-.formulario p label{
-  min-width: 80px;
-  display: flex;
-  align-items: center;
-}
 
 
-.formulario p:nth-child(4){
-  align-items: start;
-}
 
-.formulario textarea{
-  resize: none;
-  height: 120px;
-}
-
-.formulario input[type="submit"]{
-  background: rgba(174,126,208);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  color: white;
-  font-size: 16px;
-  padding: 6px 20px;
-  width: auto;
-  position: relative;
-  left: 5rem;
-  cursor: pointer;
-  transition: all 0.8s ease;
-}
-
-.formulario input[type="submit"]:hover {
-  background-color: rgb(189, 106, 142);
-}
 
 
 /* End contact */
