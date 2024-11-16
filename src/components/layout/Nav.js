@@ -23,6 +23,11 @@ const Nav = (props) => {
                         </NavLink>
                     </li>
                     <li>
+                        <NavLink to="/biblioteca" className={({ isActive }) => (isActive ? "activo" : undefined)}>
+                        Biblioteca
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink to="/contacto" className={({ isActive }) => (isActive ? "activo" : undefined)}>
                         Contacto
                         </NavLink>

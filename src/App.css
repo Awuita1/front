@@ -58,15 +58,35 @@ header img{
   flex-direction: row-reverse;
 }
 
-/* Galery */
+/* Novedades */
 
-.galeria{
+.novedades{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.galeria img{
+.novedades img{
+  width: 18%;
+  border: 1px solid #ddd;
+  padding: 0.3em;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 2%;
+}
+
+/* Novedades */
+
+
+/* Galery */
+
+.biblioteca{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.biblioteca img{
   width: 18%;
   border: 1px solid #ddd;
   padding: 0.3em;
