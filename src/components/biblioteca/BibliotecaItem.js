@@ -7,8 +7,8 @@ const BibliotecaItem = (props) =>{
         <div className= 'biblioteca'>
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
-            <img src={imagen}></img>
-            <div dangerouslySetInnerHTML={{__html: description}} />
+            <img src={imagen}/>
+            <div dangerouslySetInnerHTML={{__html: description}}/>
             <hr />
         </div>
     );

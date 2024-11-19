@@ -1,36 +1,43 @@
-import React from "react";
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import StaffItem from '../components/staff/StaffItem';
 import '../styles/components/pages/NosotrosPage.css';
 
-const NosotrosPage = (props) =>{
-    return(
-        <main className="holder">
-            <div className="historia">
-                <h2>Historia</h2>
-                <p>
-                    loremormeormeormooer
-                </p>
+const NosotrosPage = () => {
+    const [loading, setLoading] = useState(false);
+    const [nosotros, setNovedades] = useState([]);
 
-                <p>
-                    loremormoermoer
-                </p>
-            </div>
+    useEffect(() => {
+        const cargarStaff = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/staff');
+            setNovedades(response.data);
+            setLoading(false);
+        };
 
-            <div className="staff">
-                <h2>Staff</h2>
-                <div className="personas">
-                    <div className="persona">
-                        <img src="img/nosotros/nosotros1.jpg" alt="Juan Simon"/>
-                        <h5>Juan Simon</h5>
-                        <h6>Gerente general</h6>
-                        <p>
-                            loremormeormeormooer
-                        </p>
-                    </div>
-                </div>
-            </div>
+        cargarStaff();
+    }, []);
 
-        </main>
+    return (
+        
+        <section className='nosotros'>
+            <h2>Historia</h2>
+            <p>loremloremdnksaldnsakldnkasldnkldjsla</p>
+            <h2>Nosotros</h2>
+            {loading ? (
+                <p>cargando...</p>
+            ) : (
+                nosotros.map(item => (
+                    <StaffItem 
+                        key={item.id}  // Usamos item.id como clave única dentro de la lista
+                        apellido={item.apellido} 
+                        nombre={item.nombre} 
+                        imagen={item.imagen} 
+                        cargo={item.cargo} 
+                    />
+                ))
+            )}
+        </section>
     );
 }
 

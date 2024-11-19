@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="nosotros" element={<NosotrosPage />} />
           <Route path="novedades" element={<NovedadesPage />} />
-          <Route path="biblioteca" element={<BibliotecaPage/>}/>
+          <Route path="biblioteca" element={<BibliotecaPage />} />
           <Route path="contacto" element={<ContactoPage />} />
         </Routes>
       </BrowserRouter>
