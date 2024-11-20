@@ -1,16 +1,19 @@
 import React from 'react';
 
-const StaffItem = (props) =>{
-    const {apellido, nombre, imagen, cargo} = props;
+const StaffItem = (props) => {
+    const { apellido, nombre, imagen, cargo } = props;
 
-    return(
-        <div className= 'staff'>
-            <h1>{apellido}</h1>
-            <h2>{nombre}</h2>
-            <img src={imagen}></img>
-            <div dangerouslySetInnerHTML={{__html: cargo}} />
-            <hr />
+    return (
+        <div className='staff'>
+            <div className='persona'>
+                <img src={imagen}></img>
+                <h5>{apellido}</h5>
+                <h6>{nombre}</h6>
+                <p>{cargo}</p>
+                <hr />
+            </div>
         </div>
+
     );
 }
 

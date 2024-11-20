@@ -22,14 +22,17 @@ const NosotrosPage = () => {
         
         <section className='nosotros'>
             <h2>Historia</h2>
-            <p>loremloremdnksaldnsakldnkasldnkldjsla</p>
+            <p>Kimow nació en 2020 de la pasión por los videojuegos clásicos y la necesidad de preservar su legado.
+                Lo que empezó como un proyecto entre amigos se convirtió en una plataforma dedicada a mantener vivos los juegos que marcaron generaciones.
+                En Kimow, cada juego es una pieza de historia que merece ser salvada.
+            </p>
             <h2>Nosotros</h2>
             {loading ? (
                 <p>cargando...</p>
             ) : (
                 nosotros.map(item => (
                     <StaffItem 
-                        key={item.id}  // Usamos item.id como clave única dentro de la lista
+                        key={item.id}
                         apellido={item.apellido} 
                         nombre={item.nombre} 
                         imagen={item.imagen} 
