@@ -27,7 +27,8 @@ const NosotrosPage = () => {
                 En Kimow, cada juego es una pieza de historia que merece ser salvada.
             </p>
             <h2>Nosotros</h2>
-            {loading ? (
+            <div className='staff'>
+                {loading ? (
                 <p>cargando...</p>
             ) : (
                 nosotros.map(item => (
@@ -40,6 +41,8 @@ const NosotrosPage = () => {
                     />
                 ))
             )}
+            </div>
+            
         </section>
     );
 }
