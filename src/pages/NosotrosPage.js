@@ -19,7 +19,7 @@ const NosotrosPage = () => {
     }, []);
 
     return (
-        
+
         <section className='nosotros'>
             <h2>Historia</h2>
             <p>Kimow nació en 2020 de la pasión por los videojuegos clásicos y la necesidad de preservar su legado.
@@ -27,22 +27,22 @@ const NosotrosPage = () => {
                 En Kimow, cada juego es una pieza de historia que merece ser salvada.
             </p>
             <h2>Nosotros</h2>
-            <div className='staff'>
-                {loading ? (
+            {loading ? (
                 <p>cargando...</p>
             ) : (
                 nosotros.map(item => (
-                    <StaffItem 
-                        key={item.id}
-                        apellido={item.apellido} 
-                        nombre={item.nombre} 
-                        imagen={item.imagen} 
-                        cargo={item.cargo} 
-                    />
+                    <div key={item.id} className="col-md-4 col-sm-6 mb-4">
+                        <StaffItem
+                            apellido={item.apellido}
+                            nombre={item.nombre}
+                            imagen={item.imagen}
+                            cargo={item.cargo}
+                        />
+                    </div>
                 ))
             )}
-            </div>
-            
+
+
         </section>
     );
 }
