@@ -20,19 +20,21 @@ const NovedadesPage = () => {
     return (
         <section className='holder'>
             <h2>Novedades</h2>
-            {loading ? (
-                <p>cargando...</p>
-            ) : (
-                novedades.map(item => (
-                    <NovedadItem 
-                        key={item.id}  // Usamos item.id como clave única dentro de la lista
-                        title={item.titulo} 
-                        subtitle={item.subtitulo} 
-                        imagen={item.imagen} 
-                        body={item.cuerpo} 
-                    />
-                ))
-            )}
+            <ul className='list-group list-group-flush'>
+                {loading ? (
+                    <p>cargando...</p>
+                ) : (
+                    novedades.map(item => (
+                        <NovedadItem
+                            key={item.id}  // Usamos item.id como clave única dentro de la lista
+                            title={item.titulo}
+                            subtitle={item.subtitulo}
+                            imagen={item.imagen}
+                            body={item.cuerpo}
+                        />
+                    ))
+                )}
+            </ul>
         </section>
     );
 }

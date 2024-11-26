@@ -1,17 +1,24 @@
 import React from 'react';
+import "../../styles/components/pages/BibliotecaPage.css";
 
-const BibliotecaItem = (props) =>{
-    const {title, subtitle, imagen, description} = props;
+const BibliotecaItem = (props) => {
+    const { title, subtitle, imagen, description } = props;
 
-    return(
-        <div className= 'biblioteca'>
-            <h1>{title}</h1>
-            <h2>{subtitle}</h2>
-            <img src={imagen}/>
-            <div dangerouslySetInnerHTML={{__html: description}}/>
-            <hr />
+    return (
+        <div className='card mb-3' id='articulo'>
+            <div className='row g-0'>
+                <div className='col-md-4' id='articulo-imagen'>
+                    <img src={imagen} className='img-fluid rounded-start' alt={title} />
+                </div>
+                <div className='col-md-8'>
+                    <div className='card-body'>
+                        <h5 className='card-title'>{title} {subtitle}</h5>
+                        <p className='card-text'>{description}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
-}
+};
 
 export default BibliotecaItem;

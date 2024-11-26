@@ -14,15 +14,7 @@ h2 {
   font-weight: 400;
 }
 
-header img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  /* Convierte el cuadrado en un círculo */
-  box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.87);
-  -webkit-box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.87);
-  -moz-box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.87);
-}
+
 
 .servicio {
   border: 1px solid #ccc;
@@ -54,40 +46,4 @@ header img {
 
 .servicio:nth-child(even) {
   flex-direction: row-reverse;
-}
-
-/* Novedades */
-.novedades {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.novedades img {
-  width: 18%;
-  border: 1px solid #ddd;
-  padding: 0.3em;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  margin-right: 2%;
-}
-
-/* Novedades */
-
-
-/* Galery */
-
-.biblioteca {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.biblioteca img {
-  width: 18%;
-  border: 1px solid #ddd;
-  padding: 0.3em;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  margin-right: 2%;
 }
