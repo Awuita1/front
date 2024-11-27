@@ -14,7 +14,9 @@ const NovedadItem = (props) => {
                     </div>
                     <div className='col-md-8'>
                         <div className='card-body'>
-                            <h5 className='card-title'>{title} {subtitle}</h5>
+                            <h5 className='card-title'>{title}</h5>
+                            <h6 className='card-subtitle'>{subtitle}</h6>
+                            <hr></hr>
                             <p className='card-text'>{body}</p>
                         </div>
                     </div>

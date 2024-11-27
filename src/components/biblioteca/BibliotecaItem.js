@@ -13,6 +13,8 @@ const BibliotecaItem = (props) => {
                 <div className='col-md-8'>
                     <div className='card-body'>
                         <h5 className='card-title'>{title} {subtitle}</h5>
+                        <h6 className='card-subtitle'> Categoria: {subtitle}</h6>
+                        <hr></hr>
                         <p className='card-text'>{description}</p>
                     </div>
                 </div>
